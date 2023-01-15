@@ -226,6 +226,43 @@ main{
     transform: scale(1.1);
 }
 
+/* Our plans */
+
+.our-plans{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.our-plans .plan-contaner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.our-plans h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.plan-contaner .cont-box{
+    width: 20%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff4e798;
+    border-radius: 8px;
+}
+
+.plan-contaner .cont-box:hover{
+    background-color: #ffead1;
+    transition: 0.3s;
+    transform: rotate(5deg);
+}
+
+.plan-contaner .cont-box h3{
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
 /* Sponsor section */
 
 .sponsor{
@@ -311,6 +348,15 @@ main{
 
         gap: 30px;
     }
+
+    .our-plans .plan-contaner{
+        flex-direction: column;
+    }
+    .plan-contaner .cont-box{
+        width: 70%;
+        margin: 20px auto;
+    }
+
 
     .sponsor .sponsor-img{
         flex-direction: column;
