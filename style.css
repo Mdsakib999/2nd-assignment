@@ -1,12 +1,4 @@
-/* 
-echo "# 2nd-assignment" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Mdsakib999/2nd-assignment.git
-git push -u origin main 
-*/
+
 *{
     margin: 0;
     padding: 0;
@@ -184,7 +176,7 @@ main{
     width: 70%;
     text-align: center;
     position: relative;
-    bottom: 110px;
+    bottom: 140px;
     left: 350px;
 }
 
@@ -244,6 +236,10 @@ main{
     text-align: center;
     line-height: 2;
 }
+.sponsor .sponsor-txt h1{
+    font-size: 35px;
+}
+
 
 .sponsor .sponsor-img{
     margin-top: 40px;
@@ -270,6 +266,12 @@ main{
     nav{
       flex-direction: column;
     }
+
+    /* .nav-items ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    } */
 
     .header-txt{
         width: 80%;
