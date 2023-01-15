@@ -7,8 +7,318 @@ git branch -M main
 git remote add origin https://github.com/Mdsakib999/2nd-assignment.git
 git push -u origin main 
 */
-
-
-h1{
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
+
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    margin-bottom: 100px;
+}
+
+nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    font-family: cursive;
+}
+
+.nav-items ul{
+    margin: 40px 0;
+    display: flex;
+    gap: 70px;
+    /* justify-content: space-evenly; */
+}
+
+.nav-items ul li{
+    list-style: none;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-txt{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.header-txt h1{
+    font-size: 45px;
+}
+
+.header-txt .header-p{
+    margin: 20px 0;
+}
+
+.primary-btn{
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .header-pic{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.header-pic img{
+    width: 100%;
+    margin: 50px 0;
+    
+}
+
+/* Main section */
+
+/* Quick section */
+main{
+    background-color: #fff;
+}
+
+.quick-section{
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-section .quick-pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    
+}
+
+.quick-section .quick-pic img{
+    
+    width: 100%;
+}
+
+.quick-txt{
+    padding: 15px;
+    width: 50%;
+}
+
+.quick-txt h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.quick-txt h1 .span1{
+    color: #908f8f;
+    font-weight: 600;
+}
+
+.quick-txt h1 .span2{
+    color: orange;
+}
+
+.quick-txt p{
+    margin: 10px 0 20px 0;
+}
+
+/* Feture section */
+
+.feture{
+    width: 80%;
+    margin: 100px auto 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    /* background-color: rgb(254, 254, 254); */
+}
+
+.feture-txt{
+    /* border: 2px solid blue; */
+}
+
+.feture-txt h2{
+    border-left: 5px solid orange;
+    padding-left: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+
+.feture-txt p{
+    margin: 20px 0 10px 0;
+    width: 80%;
+}
+
+.feture-txt .feture-box{
+    border: 2px solid;
+    margin: 20px 0;
+    padding: 10px;
+    width: 70%;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+.feture-txt .feture-box:hover{
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+.feture-img img{
+    width: 100%;
+}
+
+.section-btn{
+    width: 70%;
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    left: 350px;
+}
+
+.section-btn button{
+    padding: 25px;
+    line-height: 1;
+}
+.section-btn button h1{
+    font-weight: 800;
+}
+
+.section-btn button:hover{
+    color: black;
+    transition: 1s;
+}
+
+/* Facts section */
+
+.facts{
+    width: 80%;
+    margin: 0 auto;
+}
+.facts h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.facts .facts-contaner{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.facts .facts-contaner .facts-box{
+    border: 2px solid orange;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.facts .facts-contaner .facts-box:hover{
+    background-color: orange;
+    color: #fff;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+/* Sponsor section */
+
+.sponsor{
+    width: 80%;
+    margin: 60px auto;
+}
+.sponsor .sponsor-txt{
+    text-align: center;
+    line-height: 2;
+}
+
+.sponsor .sponsor-img{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+.footer{
+    width: 80%;
+    margin: 90px auto 100px auto;
+}
+.footer p{
+    text-align: center;
+    padding: 20px 0;
+    background-color: 
+    #FFF4E7;
+}
+
+/* Responsive desidne */
+
+@media only screen and (max-width: 567px) {
+    nav{
+      flex-direction: column;
+    }
+
+    .header-txt{
+        width: 80%;
+    }
+
+    .quick-section{
+        flex-direction: column;
+    }
+
+    .quick-section .quick-pic{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quick-txt{
+    width: 80%;
+    }
+
+    .feture{
+        flex-direction: column;
+    }
+
+    .feture-txt h2{
+        width: 100%;
+    }
+
+
+
+    .section-btn{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    left: 100px;
+    }
+
+    .facts .facts-contaner{
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .sponsor .sponsor-img{
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        gap: 50px;
+    }
+
+    .sponsor .sponsor-txt{
+    margin-bottom: 30px;
+}
+
+  }
